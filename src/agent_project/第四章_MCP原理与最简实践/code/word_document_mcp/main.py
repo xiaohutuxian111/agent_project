@@ -1,4 +1,4 @@
-from mcp.server.mcpserver import MCPServer
+from mcp.server import MCPServer
 from typing import Optional, Union, List, Dict
 from pydantic import BaseModel
 import os
