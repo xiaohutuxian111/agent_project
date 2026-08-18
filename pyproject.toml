@@ -9,17 +9,19 @@ authors = [
 requires-python = ">=3.14"
 dependencies = [
     "json5>=0.15.0",
+    "mcp[cli]>=2.0.0",
     "openai>=3.1.0",
+    "python-docx>=1.2.0",
     "python-dotenv>=1.2.3",
     "requests>=2.34.2",
 ]
 
 [project.scripts]
-agent-project = "base_agent:main"
+agent-project = "agent_project:main"
 
 [build-system]
 requires = ["uv_build>=0.12.5,<0.13.0"]
 build-backend = "uv_build"
 
 [tool.uv.build-backend]
-module-name = "base_agent"
+module-name = "agent_project"

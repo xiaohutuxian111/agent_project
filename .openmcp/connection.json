@@ -1,0 +1,120 @@
+{
+  "items": [
+    [
+      {
+        "connectionType": "STDIO",
+        "command": "mcp",
+        "args": [
+          "run",
+          "main.py"
+        ],
+        "url": "",
+        "cwd": "{workspace}/src/agent_project/第四章_MCP原理与最简实践/code/word_document_mcp",
+        "oauth": "",
+        "clientName": "openmcp.connect.STDIO",
+        "clientVersion": "0.0.1",
+        "env": {
+          "HOME": "C:\\Users\\stone",
+          "LOGNAME": "stone",
+          "PATH": "c:\\Users\\stone\\.trae-cn\\tools\\trae-gopls\\current;c:\\Users\\stone\\.trae-cn\\sdks\\workspaces\\4c561b48\\versions\\node\\current;c:\\Users\\stone\\.trae-cn\\sdks\\versions\\node\\current;C:\\Program Files\\Python314\\Scripts\\;C:\\Program Files\\Python314\\;E:\\environment\\jdk17\\bin;E:\\soft\\vmware\\bin\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;E:\\environment\\conda3\\condabin;E:\\soft\\xshell\\;E:\\soft\\xftp\\;E:\\soft\\git\\cmd;E:\\environment\\maven\\apache-maven-3.9.8\\bin;E:\\environment\\tesseract;C:\\Program Files\\Google\\Chrome\\Application;E:\\nodejs\\;C:\\Users\\stone\\AppData\\Roaming\\npm;E:\\environment\\platform-tools;%ANDROID_SDK_ROOT%;C:\\Program Files\\Docker\\Docker\\resources\\bin;C:\\Users\\stone\\AppData\\Local\\Microsoft\\WindowsApps;E:\\soft\\pycharm\\PyCharm 2024.1.4\\bin;E:\\soft\\vscode\\bin;E:\\soft\\idea\\IntelliJ IDEA 2024.1.4\\bin;C:\\Users\\stone\\AppData\\Roaming\\npm;E:\\environment\\platform-tools;E:\\environment\\build-tools\\28.0.1;E:\\soft\\multipass\\bin;E:\\pycharm\\PyCharm 2026.2\\bin;C:\\Users\\stone\\AppData\\Local\\Programs\\Ollama;e:\\Trae CN\\resources\\app\\bin\\lib",
+          "SHELL": "C:\\Windows\\system32\\cmd.exe",
+          "TERM": "未设置 (Windows 默认终端)",
+          "USER": "stone"
+        },
+        "serverInfo": {
+          "name": "word-mcp",
+          "version": "unknown"
+        },
+        "name": "word-mcp",
+        "version": "unknown"
+      }
+    ],
+    [
+      {
+        "connectionType": "STDIO",
+        "command": "mcp",
+        "args": [
+          "run",
+          "main.py"
+        ],
+        "url": "",
+        "cwd": "{workspace}/src/agent_project/第四章_MCP原理与最简实践/code/word_document_mcp",
+        "oauth": "",
+        "clientName": "openmcp.connect.STDIO",
+        "clientVersion": "0.0.1",
+        "env": {
+          "HOME": "C:\\Users\\stone",
+          "LOGNAME": "stone",
+          "PATH": "c:\\Users\\stone\\.trae-cn\\tools\\trae-gopls\\current;c:\\Users\\stone\\.trae-cn\\sdks\\workspaces\\4c561b48\\versions\\node\\current;c:\\Users\\stone\\.trae-cn\\sdks\\versions\\node\\current;C:\\Program Files\\Python314\\Scripts\\;C:\\Program Files\\Python314\\;E:\\environment\\jdk17\\bin;E:\\soft\\vmware\\bin\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;E:\\environment\\conda3\\condabin;E:\\soft\\xshell\\;E:\\soft\\xftp\\;E:\\soft\\git\\cmd;E:\\environment\\maven\\apache-maven-3.9.8\\bin;E:\\environment\\tesseract;C:\\Program Files\\Google\\Chrome\\Application;E:\\nodejs\\;C:\\Users\\stone\\AppData\\Roaming\\npm;E:\\environment\\platform-tools;%ANDROID_SDK_ROOT%;C:\\Program Files\\Docker\\Docker\\resources\\bin;C:\\Users\\stone\\AppData\\Local\\Microsoft\\WindowsApps;E:\\soft\\pycharm\\PyCharm 2024.1.4\\bin;E:\\soft\\vscode\\bin;E:\\soft\\idea\\IntelliJ IDEA 2024.1.4\\bin;C:\\Users\\stone\\AppData\\Roaming\\npm;E:\\environment\\platform-tools;E:\\environment\\build-tools\\28.0.1;E:\\soft\\multipass\\bin;E:\\pycharm\\PyCharm 2026.2\\bin;C:\\Users\\stone\\AppData\\Local\\Programs\\Ollama;e:\\Trae CN\\resources\\app\\bin\\lib",
+          "SHELL": "C:\\Windows\\system32\\cmd.exe",
+          "TERM": "未设置 (Windows 默认终端)",
+          "USER": "stone"
+        },
+        "serverInfo": {
+          "name": "HelloMCP",
+          "version": "unknown"
+        },
+        "name": "HelloMCP",
+        "version": "unknown"
+      }
+    ],
+    [
+      {
+        "connectionType": "STDIO",
+        "command": "mcp",
+        "args": [
+          "run",
+          "main.py"
+        ],
+        "url": "",
+        "cwd": "{workspace}/src/agent_project/第四章_MCP原理与最简实践/code/word_document_mcp",
+        "oauth": "",
+        "clientName": "openmcp.connect.STDIO",
+        "clientVersion": "0.0.1",
+        "env": {
+          "HOME": "C:\\Users\\stone",
+          "LOGNAME": "stone",
+          "PATH": "c:\\Users\\stone\\.trae-cn\\tools\\trae-gopls\\current;c:\\Users\\stone\\.trae-cn\\sdks\\workspaces\\4c561b48\\versions\\node\\current;c:\\Users\\stone\\.trae-cn\\sdks\\versions\\node\\current;C:\\Program Files\\Python314\\Scripts\\;C:\\Program Files\\Python314\\;E:\\environment\\jdk17\\bin;E:\\soft\\vmware\\bin\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;E:\\environment\\conda3\\condabin;E:\\soft\\xshell\\;E:\\soft\\xftp\\;E:\\soft\\git\\cmd;E:\\environment\\maven\\apache-maven-3.9.8\\bin;E:\\environment\\tesseract;C:\\Program Files\\Google\\Chrome\\Application;E:\\nodejs\\;C:\\Users\\stone\\AppData\\Roaming\\npm;E:\\environment\\platform-tools;%ANDROID_SDK_ROOT%;C:\\Program Files\\Docker\\Docker\\resources\\bin;C:\\Users\\stone\\AppData\\Local\\Microsoft\\WindowsApps;E:\\soft\\pycharm\\PyCharm 2024.1.4\\bin;E:\\soft\\vscode\\bin;E:\\soft\\idea\\IntelliJ IDEA 2024.1.4\\bin;C:\\Users\\stone\\AppData\\Roaming\\npm;E:\\environment\\platform-tools;E:\\environment\\build-tools\\28.0.1;E:\\soft\\multipass\\bin;E:\\pycharm\\PyCharm 2026.2\\bin;C:\\Users\\stone\\AppData\\Local\\Programs\\Ollama;e:\\Trae CN\\resources\\app\\bin\\lib",
+          "SHELL": "C:\\Windows\\system32\\cmd.exe",
+          "TERM": "未设置 (Windows 默认终端)",
+          "USER": "stone"
+        },
+        "serverInfo": {
+          "name": "HelloMCP",
+          "version": "unknown"
+        },
+        "name": "HelloMCP",
+        "version": "unknown"
+      }
+    ],
+    [
+      {
+        "connectionType": "STDIO",
+        "command": "mcp",
+        "args": [
+          "run",
+          "main.py"
+        ],
+        "url": "",
+        "cwd": "{workspace}/src/agent_project/第四章_MCP原理与最简实践/code/word_document_mcp",
+        "oauth": "",
+        "clientName": "openmcp.connect.STDIO",
+        "clientVersion": "0.0.1",
+        "env": {
+          "HOME": "C:\\Users\\stone",
+          "LOGNAME": "stone",
+          "PATH": "c:\\Users\\stone\\.trae-cn\\tools\\trae-gopls\\current;c:\\Users\\stone\\.trae-cn\\sdks\\workspaces\\4c561b48\\versions\\node\\current;c:\\Users\\stone\\.trae-cn\\sdks\\versions\\node\\current;C:\\Program Files\\Python314\\Scripts\\;C:\\Program Files\\Python314\\;E:\\environment\\jdk17\\bin;E:\\soft\\vmware\\bin\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;E:\\environment\\conda3\\condabin;E:\\soft\\xshell\\;E:\\soft\\xftp\\;E:\\soft\\git\\cmd;E:\\environment\\maven\\apache-maven-3.9.8\\bin;E:\\environment\\tesseract;C:\\Program Files\\Google\\Chrome\\Application;E:\\nodejs\\;C:\\Users\\stone\\AppData\\Roaming\\npm;E:\\environment\\platform-tools;%ANDROID_SDK_ROOT%;C:\\Program Files\\Docker\\Docker\\resources\\bin;C:\\Users\\stone\\AppData\\Local\\Microsoft\\WindowsApps;E:\\soft\\pycharm\\PyCharm 2024.1.4\\bin;E:\\soft\\vscode\\bin;E:\\soft\\idea\\IntelliJ IDEA 2024.1.4\\bin;C:\\Users\\stone\\AppData\\Roaming\\npm;E:\\environment\\platform-tools;E:\\environment\\build-tools\\28.0.1;E:\\soft\\multipass\\bin;E:\\pycharm\\PyCharm 2026.2\\bin;C:\\Users\\stone\\AppData\\Local\\Programs\\Ollama;e:\\Trae CN\\resources\\app\\bin\\lib",
+          "SHELL": "C:\\Windows\\system32\\cmd.exe",
+          "TERM": "未设置 (Windows 默认终端)",
+          "USER": "stone"
+        },
+        "serverInfo": {
+          "name": "HelloMCP",
+          "version": "unknown"
+        },
+        "name": "HelloMCP",
+        "version": "unknown"
+      }
+    ]
+  ]
+}

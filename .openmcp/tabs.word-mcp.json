@@ -1,0 +1,1259 @@
+{
+  "clientId": "afd665ce-65ce-5665ceaead7-8665ceaead7dcea-7dcea119",
+  "currentIndex": 0,
+  "tabs": [
+    {
+      "name": "交互测试",
+      "icon": "icon-robot",
+      "type": "blank",
+      "componentIndex": 3,
+      "storage": {
+        "activeNames": [
+          0
+        ],
+        "messages": [
+          {
+            "role": "user",
+            "content": "写一段小红书文档,写test.word中",
+            "extraInfo": {
+              "created": 1787038637173,
+              "state": "success",
+              "serverName": "deepseek",
+              "enableXmlWrapper": false
+            }
+          },
+          {
+            "role": "assistant",
+            "content": "\n\n我来帮你创建一个小红书风格的文档，并保存到Word文件中。\n\n",
+            "tool_calls": [
+              {
+                "id": "chatcmpl-tool-be492e33c97597c7",
+                "index": 0,
+                "type": "function",
+                "function": {
+                  "name": "word_create_document",
+                  "arguments": "{\"name\": \"test\"}"
+                }
+              }
+            ],
+            "extraInfo": {
+              "created": 1787038637958,
+              "state": "success",
+              "serverName": "deepseek",
+              "enableXmlWrapper": false
+            }
+          },
+          {
+            "role": "tool",
+            "index": 0,
+            "tool_call_id": "chatcmpl-tool-be492e33c97597c7",
+            "content": [
+              {
+                "type": "text",
+                "text": "{\n  \"success\": true,\n  \"message\": \"文档 'test' 创建成功\",\n  \"output\": {\n    \"name\": \"test\",\n    \"path\": \".word-mcp\\\\test.docx\"\n  }\n}"
+              }
+            ],
+            "extraInfo": {
+              "created": 1787038637980,
+              "state": "success",
+              "serverName": "deepseek",
+              "usage": {
+                "completion_tokens": 61,
+                "prompt_tokens": 1385,
+                "total_tokens": 1446,
+                "prompt_tokens_details": {
+                  "cached_tokens": 256,
+                  "created_cache_tokens": 1024
+                }
+              },
+              "enableXmlWrapper": false
+            }
+          },
+          {
+            "role": "assistant",
+            "content": "文档已创建，现在我来添加小红书风格的内容。\n\n",
+            "tool_calls": [
+              {
+                "id": "chatcmpl-tool-9c940beff9d9ffa7",
+                "index": 0,
+                "type": "function",
+                "function": {
+                  "name": "word_add_heading",
+                  "arguments": "{\"text\": \"✨ 打工人必看！我的高效工作法分享 ✨\", \"level\": 1}"
+                }
+              },
+              {
+                "id": "chatcmpl-tool-a1d81b6242846da5",
+                "index": 1,
+                "type": "function",
+                "function": {
+                  "name": "word_add_paragraph",
+                  "arguments": "{\"text\": \"姐妹们！今天来给大家分享一套我亲测有效的高效工作法，真的绝了！💪\"}"
+                }
+              }
+            ],
+            "extraInfo": {
+              "created": 1787038639142,
+              "state": "success",
+              "serverName": "deepseek",
+              "enableXmlWrapper": false
+            }
+          },
+          {
+            "role": "tool",
+            "index": 0,
+            "tool_call_id": "chatcmpl-tool-9c940beff9d9ffa7",
+            "content": [
+              {
+                "type": "text",
+                "text": "{\n  \"success\": true,\n  \"message\": \"添加 1 级标题成功\",\n  \"output\": {\n    \"text\": \"✨ 打工人必看！我的高效工作法分享 ✨\",\n    \"level\": 1\n  }\n}"
+              }
+            ],
+            "extraInfo": {
+              "created": 1787038639163,
+              "state": "success",
+              "serverName": "deepseek",
+              "usage": {
+                "completion_tokens": 138,
+                "prompt_tokens": 1524,
+                "total_tokens": 1662,
+                "prompt_tokens_details": {
+                  "cached_tokens": 1280,
+                  "created_cache_tokens": 0
+                }
+              },
+              "enableXmlWrapper": false
+            }
+          },
+          {
+            "role": "tool",
+            "index": 1,
+            "tool_call_id": "chatcmpl-tool-a1d81b6242846da5",
+            "content": [
+              {
+                "type": "text",
+                "text": "{\n  \"success\": true,\n  \"message\": \"添加段落成功\",\n  \"output\": {\n    \"text\": \"姐妹们！今天来给大家分享一套我亲测有效的高效工作法，真的绝了！💪\",\n    \"style\": null\n  }\n}"
+              }
+            ],
+            "extraInfo": {
+              "created": 1787038639178,
+              "state": "success",
+              "serverName": "deepseek",
+              "usage": {
+                "completion_tokens": 138,
+                "prompt_tokens": 1524,
+                "total_tokens": 1662,
+                "prompt_tokens_details": {
+                  "cached_tokens": 1280,
+                  "created_cache_tokens": 0
+                }
+              },
+              "enableXmlWrapper": false
+            }
+          },
+          {
+            "role": "assistant",
+            "content": "",
+            "tool_calls": [
+              {
+                "id": "chatcmpl-tool-9fcc63c820fe4a7a",
+                "index": 0,
+                "type": "function",
+                "function": {
+                  "name": "word_add_heading",
+                  "arguments": "{\"level\": 2, \"text\": \"📌 方法一：番茄工作法\"}"
+                }
+              },
+              {
+                "id": "chatcmpl-tool-b393555d25d12d96",
+                "index": 1,
+                "type": "function",
+                "function": {
+                  "name": "word_add_paragraph",
+                  "arguments": "{\"text\": \"把工作时间切成25分钟一个的番茄钟，每完成一个就休息5分钟。这样既能保持专注，又不会太累。我已经坚持了3个月，效率提升了至少50%！🍅\"}"
+                }
+              },
+              {
+                "id": "chatcmpl-tool-a8bcc5406437afac",
+                "index": 2,
+                "type": "function",
+                "function": {
+                  "name": "word_add_heading",
+                  "arguments": "{\"level\": 2, \"text\": \"📌 方法二：四象限法则\"}"
+                }
+              },
+              {
+                "id": "chatcmpl-tool-89a01dc57da9de90",
+                "index": 3,
+                "type": "function",
+                "function": {
+                  "name": "word_add_paragraph",
+                  "arguments": "{\"text\": \"把所有任务按照\\\"重要/紧急\\\"分成四个象限，优先处理重要且紧急的事情。这样就不会被琐事牵着鼻子走了！📋\"}"
+                }
+              }
+            ],
+            "extraInfo": {
+              "created": 1787038641283,
+              "state": "success",
+              "serverName": "deepseek",
+              "enableXmlWrapper": false
+            }
+          },
+          {
+            "role": "tool",
+            "index": 0,
+            "tool_call_id": "chatcmpl-tool-9fcc63c820fe4a7a",
+            "content": [
+              {
+                "type": "text",
+                "text": "{\n  \"success\": true,\n  \"message\": \"添加 2 级标题成功\",\n  \"output\": {\n    \"text\": \"📌 方法一：番茄工作法\",\n    \"level\": 2\n  }\n}"
+              }
+            ],
+            "extraInfo": {
+              "created": 1787038641302,
+              "state": "success",
+              "serverName": "deepseek",
+              "usage": {
+                "completion_tokens": 260,
+                "prompt_tokens": 1827,
+                "total_tokens": 2087,
+                "prompt_tokens_details": {
+                  "cached_tokens": 1280,
+                  "created_cache_tokens": 512
+                }
+              },
+              "enableXmlWrapper": false
+            }
+          },
+          {
+            "role": "tool",
+            "index": 1,
+            "tool_call_id": "chatcmpl-tool-b393555d25d12d96",
+            "content": [
+              {
+                "type": "text",
+                "text": "{\n  \"success\": true,\n  \"message\": \"添加段落成功\",\n  \"output\": {\n    \"text\": \"把工作时间切成25分钟一个的番茄钟，每完成一个就休息5分钟。这样既能保持专注，又不会太累。我已经坚持了3个月，效率提升了至少50%！🍅\",\n    \"style\": null\n  }\n}"
+              }
+            ],
+            "extraInfo": {
+              "created": 1787038641312,
+              "state": "success",
+              "serverName": "deepseek",
+              "usage": {
+                "completion_tokens": 260,
+                "prompt_tokens": 1827,
+                "total_tokens": 2087,
+                "prompt_tokens_details": {
+                  "cached_tokens": 1280,
+                  "created_cache_tokens": 512
+                }
+              },
+              "enableXmlWrapper": false
+            }
+          },
+          {
+            "role": "tool",
+            "index": 2,
+            "tool_call_id": "chatcmpl-tool-a8bcc5406437afac",
+            "content": [
+              {
+                "type": "text",
+                "text": "{\n  \"success\": true,\n  \"message\": \"添加 2 级标题成功\",\n  \"output\": {\n    \"text\": \"📌 方法二：四象限法则\",\n    \"level\": 2\n  }\n}"
+              }
+            ],
+            "extraInfo": {
+              "created": 1787038641330,
+              "state": "success",
+              "serverName": "deepseek",
+              "usage": {
+                "completion_tokens": 260,
+                "prompt_tokens": 1827,
+                "total_tokens": 2087,
+                "prompt_tokens_details": {
+                  "cached_tokens": 1280,
+                  "created_cache_tokens": 512
+                }
+              },
+              "enableXmlWrapper": false
+            }
+          },
+          {
+            "role": "tool",
+            "index": 3,
+            "tool_call_id": "chatcmpl-tool-89a01dc57da9de90",
+            "content": [
+              {
+                "type": "text",
+                "text": "{\n  \"success\": true,\n  \"message\": \"添加段落成功\",\n  \"output\": {\n    \"text\": \"把所有任务按照\\\"重要/紧急\\\"分成四个象限，优先处理重要且紧急的事情。这样就不会被琐事牵着鼻子走了！📋\",\n    \"style\": null\n  }\n}"
+              }
+            ],
+            "extraInfo": {
+              "created": 1787038641338,
+              "state": "success",
+              "serverName": "deepseek",
+              "usage": {
+                "completion_tokens": 260,
+                "prompt_tokens": 1827,
+                "total_tokens": 2087,
+                "prompt_tokens_details": {
+                  "cached_tokens": 1280,
+                  "created_cache_tokens": 512
+                }
+              },
+              "enableXmlWrapper": false
+            }
+          },
+          {
+            "role": "assistant",
+            "content": "",
+            "tool_calls": [
+              {
+                "id": "chatcmpl-tool-a3c60de2772795b6",
+                "index": 0,
+                "type": "function",
+                "function": {
+                  "name": "word_add_heading",
+                  "arguments": "{\"level\": 2, \"text\": \"📌 方法三：每日计划清单\"}"
+                }
+              },
+              {
+                "id": "chatcmpl-tool-a83918161adbdb54",
+                "index": 1,
+                "type": "function",
+                "function": {
+                  "name": "word_add_paragraph",
+                  "arguments": "{\"text\": \"每天早上花10分钟列出当天的待办清单，完成后就划掉。看到一条条被划掉的任务，成就感满满！✅\"}"
+                }
+              },
+              {
+                "id": "chatcmpl-tool-b3b506c01a143cf5",
+                "index": 2,
+                "type": "function",
+                "function": {
+                  "name": "word_add_heading",
+                  "arguments": "{\"level\": 2, \"text\": \"💡 小贴士\"}"
+                }
+              },
+              {
+                "id": "chatcmpl-tool-b0384821d0a67d8b",
+                "index": 3,
+                "type": "function",
+                "function": {
+                  "name": "word_add_paragraph",
+                  "arguments": "{\"text\": \"1️⃣ 工作前先关掉手机通知，避免被打断\\\\n2️⃣ 保持桌面整洁，减少视觉干扰\\\\n3️⃣ 适当运动，让大脑保持清醒\\\\n4️⃣ 记得给自己留出休息时间，劳逸结合\"}"
+                }
+              }
+            ],
+            "extraInfo": {
+              "created": 1787038643505,
+              "state": "success",
+              "serverName": "deepseek",
+              "enableXmlWrapper": false
+            }
+          },
+          {
+            "role": "tool",
+            "index": 0,
+            "tool_call_id": "chatcmpl-tool-a3c60de2772795b6",
+            "content": [
+              {
+                "type": "text",
+                "text": "{\n  \"success\": true,\n  \"message\": \"添加 2 级标题成功\",\n  \"output\": {\n    \"text\": \"📌 方法三：每日计划清单\",\n    \"level\": 2\n  }\n}"
+              }
+            ],
+            "extraInfo": {
+              "created": 1787038643527,
+              "state": "success",
+              "serverName": "deepseek",
+              "usage": {
+                "completion_tokens": 263,
+                "prompt_tokens": 2432,
+                "total_tokens": 2695,
+                "prompt_tokens_details": {
+                  "cached_tokens": 2048,
+                  "created_cache_tokens": 256
+                }
+              },
+              "enableXmlWrapper": false
+            }
+          },
+          {
+            "role": "tool",
+            "index": 1,
+            "tool_call_id": "chatcmpl-tool-a83918161adbdb54",
+            "content": [
+              {
+                "type": "text",
+                "text": "{\n  \"success\": true,\n  \"message\": \"添加段落成功\",\n  \"output\": {\n    \"text\": \"每天早上花10分钟列出当天的待办清单，完成后就划掉。看到一条条被划掉的任务，成就感满满！✅\",\n    \"style\": null\n  }\n}"
+              }
+            ],
+            "extraInfo": {
+              "created": 1787038643536,
+              "state": "success",
+              "serverName": "deepseek",
+              "usage": {
+                "completion_tokens": 263,
+                "prompt_tokens": 2432,
+                "total_tokens": 2695,
+                "prompt_tokens_details": {
+                  "cached_tokens": 2048,
+                  "created_cache_tokens": 256
+                }
+              },
+              "enableXmlWrapper": false
+            }
+          },
+          {
+            "role": "tool",
+            "index": 2,
+            "tool_call_id": "chatcmpl-tool-b3b506c01a143cf5",
+            "content": [
+              {
+                "type": "text",
+                "text": "{\n  \"success\": true,\n  \"message\": \"添加 2 级标题成功\",\n  \"output\": {\n    \"text\": \"💡 小贴士\",\n    \"level\": 2\n  }\n}"
+              }
+            ],
+            "extraInfo": {
+              "created": 1787038643548,
+              "state": "success",
+              "serverName": "deepseek",
+              "usage": {
+                "completion_tokens": 263,
+                "prompt_tokens": 2432,
+                "total_tokens": 2695,
+                "prompt_tokens_details": {
+                  "cached_tokens": 2048,
+                  "created_cache_tokens": 256
+                }
+              },
+              "enableXmlWrapper": false
+            }
+          },
+          {
+            "role": "tool",
+            "index": 3,
+            "tool_call_id": "chatcmpl-tool-b0384821d0a67d8b",
+            "content": [
+              {
+                "type": "text",
+                "text": "{\n  \"success\": true,\n  \"message\": \"添加段落成功\",\n  \"output\": {\n    \"text\": \"1️⃣ 工作前先关掉手机通知，避免被打断\\\\n2️⃣ 保持桌面整洁，减少视觉干扰\\\\n3️⃣ 适当运动，让大脑保持清醒\\\\n4️⃣ 记得给自己留出休息时间，劳逸结合\",\n    \"style\": null\n  }\n}"
+              }
+            ],
+            "extraInfo": {
+              "created": 1787038643556,
+              "state": "success",
+              "serverName": "deepseek",
+              "usage": {
+                "completion_tokens": 263,
+                "prompt_tokens": 2432,
+                "total_tokens": 2695,
+                "prompt_tokens_details": {
+                  "cached_tokens": 2048,
+                  "created_cache_tokens": 256
+                }
+              },
+              "enableXmlWrapper": false
+            }
+          },
+          {
+            "role": "assistant",
+            "content": "",
+            "tool_calls": [
+              {
+                "id": "chatcmpl-tool-8e78e315fbfd297c",
+                "index": 0,
+                "type": "function",
+                "function": {
+                  "name": "word_add_paragraph",
+                  "arguments": "{\"text\": \"喜欢的话记得点赞收藏哦！❤️ 关注我，更多干货持续分享~\"}"
+                }
+              },
+              {
+                "id": "chatcmpl-tool-8a12e8904337b01f",
+                "index": 1,
+                "type": "function",
+                "function": {
+                  "name": "word_add_paragraph",
+                  "arguments": "{\"text\": \"#高效工作 #职场干货 #时间管理 #打工人日常 #效率提升\"}"
+                }
+              }
+            ],
+            "extraInfo": {
+              "created": 1787038644518,
+              "state": "success",
+              "serverName": "deepseek",
+              "enableXmlWrapper": false
+            }
+          },
+          {
+            "role": "tool",
+            "index": 0,
+            "tool_call_id": "chatcmpl-tool-8e78e315fbfd297c",
+            "content": [
+              {
+                "type": "text",
+                "text": "{\n  \"success\": true,\n  \"message\": \"添加段落成功\",\n  \"output\": {\n    \"text\": \"喜欢的话记得点赞收藏哦！❤️ 关注我，更多干货持续分享~\",\n    \"style\": null\n  }\n}"
+              }
+            ],
+            "extraInfo": {
+              "created": 1787038644536,
+              "state": "success",
+              "serverName": "deepseek",
+              "usage": {
+                "completion_tokens": 110,
+                "prompt_tokens": 3044,
+                "total_tokens": 3154,
+                "prompt_tokens_details": {
+                  "cached_tokens": 2560,
+                  "created_cache_tokens": 256
+                }
+              },
+              "enableXmlWrapper": false
+            }
+          },
+          {
+            "role": "tool",
+            "index": 1,
+            "tool_call_id": "chatcmpl-tool-8a12e8904337b01f",
+            "content": [
+              {
+                "type": "text",
+                "text": "{\n  \"success\": true,\n  \"message\": \"添加段落成功\",\n  \"output\": {\n    \"text\": \"#高效工作 #职场干货 #时间管理 #打工人日常 #效率提升\",\n    \"style\": null\n  }\n}"
+              }
+            ],
+            "extraInfo": {
+              "created": 1787038644548,
+              "state": "success",
+              "serverName": "deepseek",
+              "usage": {
+                "completion_tokens": 110,
+                "prompt_tokens": 3044,
+                "total_tokens": 3154,
+                "prompt_tokens_details": {
+                  "cached_tokens": 2560,
+                  "created_cache_tokens": 256
+                }
+              },
+              "enableXmlWrapper": false
+            }
+          },
+          {
+            "role": "assistant",
+            "content": "现在让我对文档进行一些格式化，让它看起来更美观。\n\n",
+            "tool_calls": [
+              {
+                "id": "chatcmpl-tool-84df079a2752350d",
+                "index": 0,
+                "type": "function",
+                "function": {
+                  "name": "word_set_alignment",
+                  "arguments": "{\"paragraph_index\": 0, \"alignment\": \"center\"}"
+                }
+              },
+              {
+                "id": "chatcmpl-tool-90d9dce9ac173706",
+                "index": 1,
+                "type": "function",
+                "function": {
+                  "name": "word_format_text",
+                  "arguments": "{\"paragraph_index\": 0, \"bold\": true, \"font_size\": 18, \"color\": \"#FF6B6B\"}"
+                }
+              },
+              {
+                "id": "chatcmpl-tool-b4ce7addf30a6542",
+                "index": 2,
+                "type": "function",
+                "function": {
+                  "name": "word_format_text",
+                  "arguments": "{\"paragraph_index\": 1, \"font_size\": 12}"
+                }
+              },
+              {
+                "id": "chatcmpl-tool-b7f0a28288bb677f",
+                "index": 3,
+                "type": "function",
+                "function": {
+                  "name": "word_format_text",
+                  "arguments": "{\"paragraph_index\": 12, \"color\": \"#666666\"}"
+                }
+              }
+            ],
+            "extraInfo": {
+              "created": 1787038646664,
+              "state": "success",
+              "serverName": "deepseek",
+              "enableXmlWrapper": false
+            }
+          },
+          {
+            "role": "tool",
+            "index": 0,
+            "tool_call_id": "chatcmpl-tool-84df079a2752350d",
+            "content": [
+              {
+                "type": "text",
+                "text": "{\n  \"success\": true,\n  \"message\": \"设置对齐方式成功: center\",\n  \"output\": {\n    \"paragraph_index\": 0,\n    \"alignment\": \"center\"\n  }\n}"
+              }
+            ],
+            "extraInfo": {
+              "created": 1787038646680,
+              "state": "success",
+              "serverName": "deepseek",
+              "usage": {
+                "completion_tokens": 260,
+                "prompt_tokens": 3311,
+                "total_tokens": 3571,
+                "prompt_tokens_details": {
+                  "cached_tokens": 3072,
+                  "created_cache_tokens": 0
+                }
+              },
+              "enableXmlWrapper": false
+            }
+          },
+          {
+            "role": "tool",
+            "index": 1,
+            "tool_call_id": "chatcmpl-tool-90d9dce9ac173706",
+            "content": [
+              {
+                "type": "text",
+                "text": "{\n  \"success\": true,\n  \"message\": \"格式化文本成功\",\n  \"output\": {\n    \"paragraph_index\": 0\n  }\n}"
+              }
+            ],
+            "extraInfo": {
+              "created": 1787038646690,
+              "state": "success",
+              "serverName": "deepseek",
+              "usage": {
+                "completion_tokens": 260,
+                "prompt_tokens": 3311,
+                "total_tokens": 3571,
+                "prompt_tokens_details": {
+                  "cached_tokens": 3072,
+                  "created_cache_tokens": 0
+                }
+              },
+              "enableXmlWrapper": false
+            }
+          },
+          {
+            "role": "tool",
+            "index": 2,
+            "tool_call_id": "chatcmpl-tool-b4ce7addf30a6542",
+            "content": [
+              {
+                "type": "text",
+                "text": "{\n  \"success\": true,\n  \"message\": \"格式化文本成功\",\n  \"output\": {\n    \"paragraph_index\": 1\n  }\n}"
+              }
+            ],
+            "extraInfo": {
+              "created": 1787038646700,
+              "state": "success",
+              "serverName": "deepseek",
+              "usage": {
+                "completion_tokens": 260,
+                "prompt_tokens": 3311,
+                "total_tokens": 3571,
+                "prompt_tokens_details": {
+                  "cached_tokens": 3072,
+                  "created_cache_tokens": 0
+                }
+              },
+              "enableXmlWrapper": false
+            }
+          },
+          {
+            "role": "tool",
+            "index": 3,
+            "tool_call_id": "chatcmpl-tool-b7f0a28288bb677f",
+            "content": [
+              {
+                "type": "text",
+                "text": "{\n  \"success\": false,\n  \"message\": \"段落索引 12 超出范围\",\n  \"output\": null\n}"
+              }
+            ],
+            "extraInfo": {
+              "created": 1787038646709,
+              "state": "success",
+              "serverName": "deepseek",
+              "usage": {
+                "completion_tokens": 260,
+                "prompt_tokens": 3311,
+                "total_tokens": 3571,
+                "prompt_tokens_details": {
+                  "cached_tokens": 3072,
+                  "created_cache_tokens": 0
+                }
+              },
+              "enableXmlWrapper": false
+            }
+          },
+          {
+            "role": "assistant",
+            "content": "让我检查一下文档信息，确认段落索引。\n\n",
+            "tool_calls": [
+              {
+                "id": "chatcmpl-tool-b41f70dced287ee1",
+                "index": 0,
+                "type": "function",
+                "function": {
+                  "name": "word_get_document_info",
+                  "arguments": "{}"
+                }
+              }
+            ],
+            "extraInfo": {
+              "created": 1787038647293,
+              "state": "success",
+              "serverName": "deepseek",
+              "enableXmlWrapper": false
+            }
+          },
+          {
+            "role": "tool",
+            "index": 0,
+            "tool_call_id": "chatcmpl-tool-b41f70dced287ee1",
+            "content": [
+              {
+                "type": "text",
+                "text": "{\n  \"success\": true,\n  \"message\": \"文档信息获取成功\",\n  \"output\": {\n    \"path\": \".word-mcp\\\\test.docx\",\n    \"paragraphs\": 12,\n    \"tables\": 0,\n    \"preview\": [\n      {\n        \"index\": 0,\n        \"text\": \"✨ 打工人必看！我的高效工作法分享 ✨\"\n      },\n      {\n        \"index\": 1,\n        \"text\": \"姐妹们！今天来给大家分享一套我亲测有效的高效工作法，真的绝了！💪\"\n      },\n      {\n        \"index\": 2,\n        \"text\": \"📌 方法一：番茄工作法\"\n      },\n      {\n        \"index\": 3,\n        \"text\": \"把工作时间切成25分钟一个的番茄钟，每完成一个就休息5分钟。这样既能保持专注，又不会太累。我已经坚持了3个月，效率提升了至少50%！🍅\"\n      },\n      {\n        \"index\": 4,\n        \"text\": \"📌 方法二：四象限法则\"\n      }\n    ]\n  }\n}"
+              }
+            ],
+            "extraInfo": {
+              "created": 1787038647304,
+              "state": "success",
+              "serverName": "deepseek",
+              "usage": {
+                "completion_tokens": 40,
+                "prompt_tokens": 3797,
+                "total_tokens": 3837,
+                "prompt_tokens_details": {
+                  "cached_tokens": 3072,
+                  "created_cache_tokens": 512
+                }
+              },
+              "enableXmlWrapper": false
+            }
+          },
+          {
+            "role": "assistant",
+            "content": "文档共有12个段落（索引0-11），让我对最后一个段落（索引11）进行格式化。\n\n",
+            "tool_calls": [
+              {
+                "id": "chatcmpl-tool-bd57c56e36a1a0f3",
+                "index": 0,
+                "type": "function",
+                "function": {
+                  "name": "word_format_text",
+                  "arguments": "{\"paragraph_index\": 11, \"color\": \"#666666\"}"
+                }
+              },
+              {
+                "id": "chatcmpl-tool-a783908b619f90a5",
+                "index": 1,
+                "type": "function",
+                "function": {
+                  "name": "word_format_text",
+                  "arguments": "{\"paragraph_index\": 10, \"bold\": true, \"color\": \"#FF6B6B\"}"
+                }
+              },
+              {
+                "id": "chatcmpl-tool-bb4fdbeaf74a5612",
+                "index": 2,
+                "type": "function",
+                "function": {
+                  "name": "word_set_alignment",
+                  "arguments": "{\"paragraph_index\": 10, \"alignment\": \"center\"}"
+                }
+              },
+              {
+                "id": "chatcmpl-tool-82e688537a5128eb",
+                "index": 3,
+                "type": "function",
+                "function": {
+                  "name": "word_set_alignment",
+                  "arguments": "{\"paragraph_index\": 11, \"alignment\": \"center\"}"
+                }
+              }
+            ],
+            "extraInfo": {
+              "created": 1787038649415,
+              "state": "success",
+              "serverName": "deepseek",
+              "enableXmlWrapper": false
+            }
+          },
+          {
+            "role": "tool",
+            "index": 0,
+            "tool_call_id": "chatcmpl-tool-bd57c56e36a1a0f3",
+            "content": [
+              {
+                "type": "text",
+                "text": "{\n  \"success\": true,\n  \"message\": \"格式化文本成功\",\n  \"output\": {\n    \"paragraph_index\": 11\n  }\n}"
+              }
+            ],
+            "extraInfo": {
+              "created": 1787038649429,
+              "state": "success",
+              "serverName": "deepseek",
+              "usage": {
+                "completion_tokens": 252,
+                "prompt_tokens": 4143,
+                "total_tokens": 4395,
+                "prompt_tokens_details": {
+                  "cached_tokens": 3584,
+                  "created_cache_tokens": 512
+                }
+              },
+              "enableXmlWrapper": false
+            }
+          },
+          {
+            "role": "tool",
+            "index": 1,
+            "tool_call_id": "chatcmpl-tool-a783908b619f90a5",
+            "content": [
+              {
+                "type": "text",
+                "text": "{\n  \"success\": true,\n  \"message\": \"格式化文本成功\",\n  \"output\": {\n    \"paragraph_index\": 10\n  }\n}"
+              }
+            ],
+            "extraInfo": {
+              "created": 1787038649441,
+              "state": "success",
+              "serverName": "deepseek",
+              "usage": {
+                "completion_tokens": 252,
+                "prompt_tokens": 4143,
+                "total_tokens": 4395,
+                "prompt_tokens_details": {
+                  "cached_tokens": 3584,
+                  "created_cache_tokens": 512
+                }
+              },
+              "enableXmlWrapper": false
+            }
+          },
+          {
+            "role": "tool",
+            "index": 2,
+            "tool_call_id": "chatcmpl-tool-bb4fdbeaf74a5612",
+            "content": [
+              {
+                "type": "text",
+                "text": "{\n  \"success\": true,\n  \"message\": \"设置对齐方式成功: center\",\n  \"output\": {\n    \"paragraph_index\": 10,\n    \"alignment\": \"center\"\n  }\n}"
+              }
+            ],
+            "extraInfo": {
+              "created": 1787038649453,
+              "state": "success",
+              "serverName": "deepseek",
+              "usage": {
+                "completion_tokens": 252,
+                "prompt_tokens": 4143,
+                "total_tokens": 4395,
+                "prompt_tokens_details": {
+                  "cached_tokens": 3584,
+                  "created_cache_tokens": 512
+                }
+              },
+              "enableXmlWrapper": false
+            }
+          },
+          {
+            "role": "tool",
+            "index": 3,
+            "tool_call_id": "chatcmpl-tool-82e688537a5128eb",
+            "content": [
+              {
+                "type": "text",
+                "text": "{\n  \"success\": true,\n  \"message\": \"设置对齐方式成功: center\",\n  \"output\": {\n    \"paragraph_index\": 11,\n    \"alignment\": \"center\"\n  }\n}"
+              }
+            ],
+            "extraInfo": {
+              "created": 1787038649463,
+              "state": "success",
+              "serverName": "deepseek",
+              "usage": {
+                "completion_tokens": 252,
+                "prompt_tokens": 4143,
+                "total_tokens": 4395,
+                "prompt_tokens_details": {
+                  "cached_tokens": 3584,
+                  "created_cache_tokens": 512
+                }
+              },
+              "enableXmlWrapper": false
+            }
+          },
+          {
+            "role": "assistant",
+            "content": "现在保存文档。\n\n",
+            "tool_calls": [
+              {
+                "id": "chatcmpl-tool-a0ff6763d1cfbda8",
+                "index": 0,
+                "type": "function",
+                "function": {
+                  "name": "word_save_document",
+                  "arguments": "{}"
+                }
+              }
+            ],
+            "extraInfo": {
+              "created": 1787038650009,
+              "state": "success",
+              "serverName": "deepseek",
+              "enableXmlWrapper": false
+            }
+          },
+          {
+            "role": "tool",
+            "index": 0,
+            "tool_call_id": "chatcmpl-tool-a0ff6763d1cfbda8",
+            "content": [
+              {
+                "type": "text",
+                "text": "{\n  \"success\": true,\n  \"message\": \"文档已保存到: .word-mcp\\\\test.docx\",\n  \"output\": {\n    \"path\": \".word-mcp\\\\test.docx\",\n    \"paragraphs\": 12,\n    \"tables\": 0\n  }\n}"
+              }
+            ],
+            "extraInfo": {
+              "created": 1787038650029,
+              "state": "success",
+              "serverName": "deepseek",
+              "usage": {
+                "completion_tokens": 34,
+                "prompt_tokens": 4641,
+                "total_tokens": 4675,
+                "prompt_tokens_details": {
+                  "cached_tokens": 4096,
+                  "created_cache_tokens": 512
+                }
+              },
+              "enableXmlWrapper": false
+            }
+          },
+          {
+            "role": "assistant",
+            "content": "文档已经创建并保存成功！📄\n\n我为你创建了一份**小红书风格的文档**，保存在 `test.docx` 中，内容如下：\n\n### 📝 文档内容概览\n\n**标题：** ✨ 打工人必看！我的高效工作法分享 ✨（居中、红色加粗）\n\n**正文内容：**\n1. **开场语** - 亲切的小红书风格打招呼\n2. **方法一：番茄工作法** 🍅 - 25分钟专注+5分钟休息\n3. **方法二：四象限法则** 📋 - 按重要/紧急程度分类任务\n4. **方法三：每日计划清单** ✅ - 列出待办清单提升成就感\n5. **💡 小贴士** - 4条实用建议\n6. **结尾互动** - 引导点赞收藏关注（居中、红色加粗）\n7. **话题标签** - #高效工作 #职场干货 等（居中、灰色）\n\n### 🎨 格式化效果\n- 标题使用大号红色加粗字体，居中显示\n- 结尾互动语居中并加粗\n- 话题标签居中显示，使用灰色字体\n\n文档已保存到 `.word-mcp/test.docx`，你可以直接打开查看！有什么需要修改的地方随时告诉我哦~ 😊",
+            "extraInfo": {
+              "created": 1787038652191,
+              "state": "success",
+              "serverName": "deepseek",
+              "usage": {
+                "completion_tokens": 278,
+                "prompt_tokens": 4766,
+                "total_tokens": 5044,
+                "completion_tokens_details": {
+                  "reasoning_tokens": 0
+                },
+                "prompt_tokens_details": {
+                  "cached_tokens": 4608,
+                  "created_cache_tokens": 0
+                }
+              },
+              "enableXmlWrapper": false
+            }
+          }
+        ],
+        "chatMode": "single-chat",
+        "parallelChats": [],
+        "selectedModels": [],
+        "settings": {
+          "modelIndex": 0,
+          "enableTools": [
+            {
+              "name": "word_create_document",
+              "description": "\n创建一个新的 Word 文档\n`name`: 文档名称（不需要包含.docx扩展名）\n",
+              "inputSchema": {
+                "type": "object",
+                "properties": {
+                  "name": {
+                    "title": "Name",
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "name"
+                ],
+                "title": "word_create_documentArguments"
+              },
+              "enabled": true
+            },
+            {
+              "name": "word_open_document",
+              "description": "\n打开一个现有的 Word 文档\n`name`: 文档名称（不需要包含.docx扩展名）\n",
+              "inputSchema": {
+                "type": "object",
+                "properties": {
+                  "name": {
+                    "title": "Name",
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "name"
+                ],
+                "title": "word_open_documentArguments"
+              },
+              "enabled": true
+            },
+            {
+              "name": "word_add_heading",
+              "description": "\n添加一个标题\n`text`: 标题文本\n`level`: 标题级别 (1-9, 1是最高级别)\n",
+              "inputSchema": {
+                "type": "object",
+                "properties": {
+                  "text": {
+                    "title": "Text",
+                    "type": "string"
+                  },
+                  "level": {
+                    "default": 1,
+                    "title": "Level",
+                    "type": "integer"
+                  }
+                },
+                "required": [
+                  "text"
+                ],
+                "title": "word_add_headingArguments"
+              },
+              "enabled": true
+            },
+            {
+              "name": "word_add_paragraph",
+              "description": "\n添加一个段落\n`text`: 段落文本\n`style`: 段落样式 (可选)\n",
+              "inputSchema": {
+                "type": "object",
+                "properties": {
+                  "text": {
+                    "title": "Text",
+                    "type": "string"
+                  },
+                  "style": {
+                    "anyOf": [
+                      {
+                        "type": "string"
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ],
+                    "default": null,
+                    "title": "Style"
+                  }
+                },
+                "required": [
+                  "text"
+                ],
+                "title": "word_add_paragraphArguments"
+              },
+              "enabled": true
+            },
+            {
+              "name": "word_add_table",
+              "description": "\n添加一个表格\n`rows`: 行数\n`cols`: 列数\n`data`: 表格数据 (可选，二维列表)\n",
+              "inputSchema": {
+                "type": "object",
+                "properties": {
+                  "rows": {
+                    "title": "Rows",
+                    "type": "integer"
+                  },
+                  "cols": {
+                    "title": "Cols",
+                    "type": "integer"
+                  },
+                  "data": {
+                    "anyOf": [
+                      {
+                        "items": {
+                          "items": {
+                            "type": "string"
+                          },
+                          "type": "array"
+                        },
+                        "type": "array"
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ],
+                    "default": null,
+                    "title": "Data"
+                  }
+                },
+                "required": [
+                  "rows",
+                  "cols"
+                ],
+                "title": "word_add_tableArguments"
+              },
+              "enabled": true
+            },
+            {
+              "name": "word_format_text",
+              "description": "\n格式化文本\n`paragraph_index`: 段落索引\n`bold`: 是否加粗\n`italic`: 是否斜体\n`underline`: 是否下划线\n`font_size`: 字体大小\n`font_name`: 字体名称\n`color`: 字体颜色 (十六进制格式，如 #FF0000)\n",
+              "inputSchema": {
+                "type": "object",
+                "properties": {
+                  "paragraph_index": {
+                    "title": "Paragraph Index",
+                    "type": "integer"
+                  },
+                  "bold": {
+                    "anyOf": [
+                      {
+                        "type": "boolean"
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ],
+                    "default": null,
+                    "title": "Bold"
+                  },
+                  "italic": {
+                    "anyOf": [
+                      {
+                        "type": "boolean"
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ],
+                    "default": null,
+                    "title": "Italic"
+                  },
+                  "underline": {
+                    "anyOf": [
+                      {
+                        "type": "boolean"
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ],
+                    "default": null,
+                    "title": "Underline"
+                  },
+                  "font_size": {
+                    "anyOf": [
+                      {
+                        "type": "integer"
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ],
+                    "default": null,
+                    "title": "Font Size"
+                  },
+                  "font_name": {
+                    "anyOf": [
+                      {
+                        "type": "string"
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ],
+                    "default": null,
+                    "title": "Font Name"
+                  },
+                  "color": {
+                    "anyOf": [
+                      {
+                        "type": "string"
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ],
+                    "default": null,
+                    "title": "Color"
+                  }
+                },
+                "required": [
+                  "paragraph_index"
+                ],
+                "title": "word_format_textArguments"
+              },
+              "enabled": true
+            },
+            {
+              "name": "word_set_alignment",
+              "description": "\n设置段落对齐方式\n`paragraph_index`: 段落索引\n`alignment`: 对齐方式 (left, center, right, justify)\n",
+              "inputSchema": {
+                "type": "object",
+                "properties": {
+                  "paragraph_index": {
+                    "title": "Paragraph Index",
+                    "type": "integer"
+                  },
+                  "alignment": {
+                    "title": "Alignment",
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "paragraph_index",
+                  "alignment"
+                ],
+                "title": "word_set_alignmentArguments"
+              },
+              "enabled": true
+            },
+            {
+              "name": "word_save_document",
+              "description": "保存当前活动的文档",
+              "inputSchema": {
+                "type": "object",
+                "properties": {},
+                "title": "word_save_documentArguments"
+              },
+              "enabled": true
+            },
+            {
+              "name": "word_save_as_document",
+              "description": "\n将当前文档另存为\n`name`: 新文档名称\n",
+              "inputSchema": {
+                "type": "object",
+                "properties": {
+                  "name": {
+                    "title": "Name",
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "name"
+                ],
+                "title": "word_save_as_documentArguments"
+              },
+              "enabled": true
+            },
+            {
+              "name": "word_get_document_info",
+              "description": "获取当前文档的信息",
+              "inputSchema": {
+                "type": "object",
+                "properties": {},
+                "title": "word_get_document_infoArguments"
+              },
+              "enabled": true
+            }
+          ],
+          "enableWebSearch": false,
+          "temperature": 0.6,
+          "contextLength": 100,
+          "systemPrompt": "",
+          "enableXmlWrapper": false,
+          "parallelToolCalls": true
+        }
+      }
+    }
+  ]
+}
